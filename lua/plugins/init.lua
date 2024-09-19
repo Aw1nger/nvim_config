@@ -13,6 +13,24 @@ return {
   },
 
   {
+    "nvim-tree/nvim-tree.lua",
+    lazy = false,
+    config = function()
+      require("nvim-tree").setup {
+        git = {
+          enable = true,
+          ignore = false,
+          timeout = 400,
+        },
+        renderer = {
+          root_folder_label = false,
+        },
+      }
+    end,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+
+  {
     "stevearc/dressing.nvim",
     lazy = false,
     opts = {},
