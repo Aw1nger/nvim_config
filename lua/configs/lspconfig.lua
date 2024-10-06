@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "ts_ls", "tailwindcss" }
+local servers = { "html", "cssls", "ts_ls", "tailwindcss", "gopls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -31,7 +31,7 @@ lspconfig.emmet_language_server.setup {
     "sass",
     "scss",
     "typescriptreact",
-    "tailwindcss-language-server",
+    "tailwindcss",
   },
   init_options = {
     excludeLanguages = {},
