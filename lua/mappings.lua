@@ -32,4 +32,5 @@ map("n", "<A-Enter>", function()
   vim.lsp.buf.code_action()
 end, { noremap = true, silent = true, desc = "Quickfix" })
 
-map("i", "<D-\\>", "<C-x><C-o>", { noremap = true, silent = true, desc = "Complete word" })
+-- Автодополнение
+map("i", "<D-/>", "<C-x><C-o>", { noremap = true, silent = true, desc = "Complete word" })
